@@ -1,0 +1,51 @@
+.sidebar {
+  width: 260px;
+  height: 100%;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: #e5e7eb;
+  padding-top: 24px;
+}
+
+/* Menu List */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menu Items */
+.menu li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 24px;
+  margin: 6px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover Effect */
+.menu li:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Active Item */
+.menu .active {
+  background: rgba(99, 102, 241, 0.25);
+  border-left: 4px solid #6366f1;
+}
+
+/* Icons */
+mat-icon {
+  font-size: 20px;
+  color: #c7d2fe;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 14px 24px;
+  pointer-events: none;
+}

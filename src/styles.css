@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+/* ================= LIGHT THEME ================= */
+:root {
+  --bg-main: #f1f5f9;        /* Page background */
+  --bg-card: #ffffff;       /* Cards */
+  --text-main: #0f172a;     /* Main text */
+  --text-muted: #64748b;    /* Sub text */
+
+  --nav-bg: linear-gradient(90deg, #0f172a, #020617);
+  --side-bg: linear-gradient(180deg, #020617, #020617);
+
+  --accent: #4f46e5;        /* Indigo accent */
+  --accent-soft: rgba(79, 70, 229, 0.15);
+
+  --border: #e2e8f0;
+}
+
+/* ================= DARK THEME ================= */
+.dark-theme {
+  --bg-main: #020617;
+  --bg-card: #020617;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+
+  --nav-bg: linear-gradient(90deg, #020617, #020617);
+  --side-bg: linear-gradient(180deg, #020617, #020617);
+
+  --accent: #818cf8;
+  --accent-soft: rgba(129, 140, 248, 0.25);
+
+  --border: #1e293b;
+}

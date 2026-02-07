@@ -1,0 +1,61 @@
+.page-header h1 {
+  color: var(--accent);
+}
+
+/* Table */
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reports-table th {
+  text-align: left;
+  font-size: 13px;
+  color: var(--text-muted);
+  padding-bottom: 14px;
+}
+
+.reports-table td {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+/* Status badges */
+.status {
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.ready {
+  background: rgba(34, 197, 94, 0.15);
+  color: #16a34a;
+}
+
+.status.processing {
+  background: rgba(251, 191, 36, 0.15);
+  color: #ca8a04;
+}
+
+.status.failed {
+  background: rgba(239, 68, 68, 0.15);
+  color: #dc2626;
+}
+
+/* Button */
+.download-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.download-btn:disabled {
+  background: #c7d2fe;
+  cursor: not-allowed;
+}

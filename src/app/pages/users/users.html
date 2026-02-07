@@ -1,0 +1,64 @@
+<!-- Page Header -->
+<div class="page-header">
+  <div>
+    <h1>Users</h1>
+    <p class="subtitle">Manage application users and permissions</p>
+  </div>
+
+  <button class="primary-btn">+ Add User</button>
+</div>
+
+<!-- Summary Cards -->
+<div class="stats-grid">
+  <div class="stat-card">
+    <p>Total Users</p>
+    <h2>1,248</h2>
+  </div>
+
+  <div class="stat-card">
+    <p>Active Users</p>
+    <h2>1,102</h2>
+  </div>
+
+  <div class="stat-card">
+    <p>Inactive Users</p>
+    <h2>146</h2>
+  </div>
+</div>
+
+<!-- Users Table -->
+<div class="card">
+  <h3>User List</h3>
+
+  <table class="users-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.role }}</td>
+        <td>
+          <span
+            class="status"
+            [class.active]="user.status === 'Active'"
+            [class.inactive]="user.status === 'Inactive'">
+            {{ user.status }}
+          </span>
+        </td>
+        <td>
+          <button class="action-btn">View</button>
+          <button class="action-btn secondary">Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,30 @@
+<nav class="navbar">
+
+  <!-- LEFT -->
+  <div class="left">
+    <span class="logo">Angular Dashboard</span>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right">
+
+    <!-- Search -->
+    <mat-icon class="icon">search</mat-icon>
+
+    <!-- Theme Toggle -->
+    <mat-icon class="icon" (click)="toggleTheme()">
+      {{ isDark ? 'light_mode' : 'dark_mode' }}
+    </mat-icon>
+
+    <!-- Notifications -->
+    <mat-icon class="icon">notifications</mat-icon>
+
+    <!-- User -->
+    <mat-icon class="icon">account_circle</mat-icon>
+
+    <!-- Logout -->
+    <mat-icon class="icon logout" (click)="logout()">logout</mat-icon>
+
+  </div>
+
+</nav>

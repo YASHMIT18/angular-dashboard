@@ -1,0 +1,44 @@
+<!-- Page Header -->
+<div class="page-header">
+  <h1>Reports</h1>
+  <p class="subtitle">Generated reports and downloads</p>
+</div>
+
+<!-- Reports Table -->
+<div class="card">
+
+  <table class="reports-table">
+    <thead>
+      <tr>
+        <th>Report Name</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let report of reports">
+        <td>{{ report.name }}</td>
+        <td>{{ report.date }}</td>
+        <td>
+          <span
+            class="status"
+            [class.ready]="report.status === 'Ready'"
+            [class.processing]="report.status === 'Processing'"
+            [class.failed]="report.status === 'Failed'">
+            {{ report.status }}
+          </span>
+        </td>
+        <td>
+          <button
+            class="download-btn"
+            [disabled]="report.status !== 'Ready'">
+            Download
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

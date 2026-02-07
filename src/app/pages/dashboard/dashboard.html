@@ -1,0 +1,84 @@
+<!-- Header -->
+<div class="page-header">
+  <h1>Sales & Purchase Dashboard</h1>
+  <p class="subtitle">Business performance overview</p>
+</div>
+
+<!-- KPI Cards -->
+<div class="stats-grid">
+  <div class="stat-card">
+    <p>Total Sales</p>
+    <h2>₹ 8,45,000</h2>
+    <span class="positive">+18%</span>
+  </div>
+
+  <div class="stat-card">
+    <p>Total Purchase</p>
+    <h2>₹ 6,30,000</h2>
+    <span class="neutral">This month</span>
+  </div>
+
+  <div class="stat-card">
+    <p>Net Profit</p>
+    <h2>₹ 2,15,000</h2>
+    <span class="positive">+12%</span>
+  </div>
+
+  <div class="stat-card">
+    <p>Pending Orders</p>
+    <h2>14</h2>
+    <span class="negative">Needs attention</span>
+  </div>
+</div>
+
+<!-- Charts -->
+<div class="charts-grid">
+
+  <div class="card">
+    <h3>Sales vs Purchase</h3>
+    <canvas id="salesPurchaseChart"></canvas>
+  </div>
+
+  <div class="card">
+    <h3>Revenue Trend</h3>
+    <canvas id="revenueTrendChart"></canvas>
+  </div>
+
+  <div class="card">
+    <h3>Sales by Category</h3>
+    <canvas id="categoryPieChart"></canvas>
+  </div>
+
+</div>
+
+<!-- Table -->
+<div class="card">
+  <h3>Recent Transactions</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Type</th>
+        <th>Amount</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>10 Mar 2024</td>
+        <td>Sale</td>
+        <td>₹ 45,000</td>
+        <td><span class="status success">Completed</span></td>
+      </tr>
+      <tr>
+        <td>09 Mar 2024</td>
+        <td>Purchase</td>
+        <td>₹ 32,000</td>
+        <td><span class="status pending">Pending</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

@@ -1,0 +1,26 @@
+.page-header h1 {
+  color: var(--accent);
+}
+
+.card {
+  background: linear-gradient(
+    135deg,
+    var(--accent-soft),
+    #ffffff
+  );
+  padding: 26px;
+  border-radius: 18px;
+}
+
+.card h3 {
+  color: var(--accent);
+}
+
+.card ul {
+  margin-top: 12px;
+}
+
+.card li {
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}

@@ -1,0 +1,36 @@
+.navbar {
+  height: 64px;
+  background: var(--nav-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  color: white;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.icon {
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.logout {
+  color: #f87171;
+}

@@ -1,0 +1,14 @@
+<div class="page-header">
+  <h1>Logs / Activity</h1>
+  <p class="subtitle">System audit trail</p>
+</div>
+
+<div class="card">
+  <ul class="log-list">
+    <li *ngFor="let log of logs">
+      <strong>{{ log.action }}</strong>
+      <span>{{ log.user }}</span>
+      <span class="time">{{ log.time }}</span>
+    </li>
+  </ul>
+</div>

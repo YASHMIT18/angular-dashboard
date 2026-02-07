@@ -1,0 +1,33 @@
+<!-- Page Header -->
+<div class="page-header">
+  <div>
+    <h1>Notifications</h1>
+    <p class="subtitle">System alerts and recent activities</p>
+  </div>
+
+  <button class="primary-btn">Mark all as read</button>
+</div>
+
+<!-- Notifications List -->
+<div class="notifications-list">
+
+  <div
+    class="notification-card"
+    *ngFor="let n of notifications"
+    [class.unread]="n.unread"
+    [class.info]="n.type === 'info'"
+    [class.success]="n.type === 'success'"
+    [class.warning]="n.type === 'warning'"
+    [class.error]="n.type === 'error'">
+
+    <div class="indicator"></div>
+
+    <div class="content">
+      <h4>{{ n.title }}</h4>
+      <p>{{ n.message }}</p>
+      <span class="time">{{ n.time }}</span>
+    </div>
+
+  </div>
+
+</div>
